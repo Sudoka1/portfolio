@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: right;
+    height: 10rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.65);
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    padding-right: 1.3rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.description, .information, .contact {
+    margin: 1rem;
+}
+
+.product-card {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.product-card p {
+    padding: .5rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.products img {
+    width: 15rem;
+    height: 10rem;
+    padding: .5rem;
+}
+
+.products h2 {
+    text-align: center;
+}
+
+th, td {
+    padding: .5rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form h4, h3 {
+    margin: 0.7rem 0 0.2rem 0;
+}
+
+input, textarea, .submit-btn {
+    padding: .5rem;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+.submit-btn {
+    width: 10rem;
+    margin-top: 0.5rem;
+    background: none;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.32);
+    height: 15rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 1.8rem;
+}
+a[target="_blank"]::after {
+    font-family: "FontAwesome";
+    content: "\f35d";
+    margin-left: 5px; 
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    flex: 1 0 100%; /* Cards as columns on mobile */
+    margin: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+}
+
+@media (min-width: 768px) {
+    .product-card {
+        flex: 0 0 calc(33.333% - 1rem); /* Cards as rows on tablets/desktops */
+    }
+}
+@media screen and (min-width: 768px) {
+    h1 {
+      padding-right: 7rem;
+    }
+}
+.product-table {
+    width: 100%; /* Table takes 100% width of the container */
+    border-collapse: collapse; /* Borders overlap */
+}
+
+.product-table th, .product-table td {
+    border: 1px solid gray; /* Gray border for cells */
+    padding: 8px; /* Adjust padding as needed */
+}
+
+.product-table tbody tr:nth-child(odd) {
+    background-color: white; /* White background for odd rows */
+}
+
+.product-table tbody tr:nth-child(even) {
+    background-color: gray; /* Gray background for even rows */
+}
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the form */
+}
+
+#contact-form label {
+    margin-bottom: 8px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline-color: blue;
+}
+
+#contact-form .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form .submit-btn:hover {
+    background-color: #45a049;
+}

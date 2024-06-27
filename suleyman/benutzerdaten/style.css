@@ -1,0 +1,25 @@
+/* form ,form > div{
+    padding: 10px;
+    margin:10px;
+    background: rgba(230, 160, 190, .3);
+}
+label{
+    width: 200px;
+    display: inline-block;
+}
+input,textarea,select{
+    width: 200px;
+}
+input[type="radio"],input[type="checkbox"] {
+    width: initial;
+}
+:required{
+    border: 2px solid red;
+    border-radius: 4px;
+}
+:valid{
+    border: initial;
+}
+:invalid{
+    border: 2px solid red;
+} */
