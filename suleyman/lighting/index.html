@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+        background-color: black;
+        color: gray;
+    }
+    h1{
+      text-align: center; 
+      /* display: block; */
+      /* font-family: monospace; */
+      font-size: 600%;
+      width: 100%;
+    }
+    @keyframes lighting {
+    
+  0% {
+    /* opacity: 1;
+    transform: scale(1); */
+    color: gold;
+  }
+  50% {
+    color:gray;
+  }
+  100% {
+    color: gray;
+  }
+}
+
+    .element {
+      letter-spacing: 15px;
+      animation: lighting 1s linear infinite;
+    }
+
+    .element:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .element:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    .element:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    .element:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+    .element:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+    .element:nth-child(6) {
+      animation-delay: 0.5s;
+    }
+    .element:nth-child(7) {
+      animation-delay: 0.6s;
+    }
+    .element:nth-child(8) {
+      animation-delay: 0.7s;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>
+    <span class="element">L</span>
+    <span class="element">I</span>
+    <span class="element">G</span>
+    <span class="element">H</span>
+    <span class="element">T</span>
+    <span class="element">I</span>
+    <span class="element">N</span>
+    <span class="element">G</span>
+    <h1>
+</body>
+</html>

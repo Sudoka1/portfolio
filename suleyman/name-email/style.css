@@ -1,0 +1,67 @@
+  /* Hier können Sie das Design des Formulars anpassen */
+    /* Beispiel-Styling für das Formular */
+    form {
+        border-radius: 5px;
+        padding: 230px;
+        width: 400px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-size:xx-large; color: azure;
+      }
+      
+      /* Beispiel-Styling für Labels */
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      /* Beispiel-Styling für Input-Felder */
+      input[type=text], select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      /* Beispiel-Styling für Submit-Button */
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      
+      /* Beispiel-Styling für Fehlermeldung */
+      .error {
+        color: red;
+        margin-top: 5px;
+      }
+
+      body {
+        background-image: url("./Nizami-Street-in-Night.jpg");
+        background-image: linear-gradient(to bottom, rgba(97, 27, 27, 0.5), rgba(148, 33, 33, 0.8));
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      input {
+        background-color: transparent;
+      }
+      input::placeholder {
+      font-weight: normal;
+      }
+
+      input.highlighted::placeholder {
+      font-weight: bold;
+      }
