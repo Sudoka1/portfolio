@@ -1,0 +1,57 @@
+body{
+    display: block;
+    margin: 200px auto;
+    width: 800px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(2,200px);
+}
+.message{
+    font-size: 80px;
+    font-weight: bolder;
+    margin-left: 350px;
+    margin-top: 155px;
+}
+main div:nth-of-type(2){
+    background-color: blue;
+    grid-column: 2;
+    transition-property: rotate;
+    transition: 2s ease;
+}
+main div:nth-of-type(3){
+    background-color: red;
+    grid-column: 3;
+    transition-property: rotate;
+    transition: 2s ease;
+}
+main div:nth-of-type(4){
+    background-color: green;
+    grid-column: 3;
+    grid-row: 2;
+    transition-property: rotate;
+    transition: 2s ease;
+}
+main div:nth-of-type(5){
+    background-color: yellow;
+    grid-column: 2;
+    grid-row: 2;
+    transition-property: rotate;
+    transition: 2s ease;
+}
+main:hover{
+    .square1{
+        transform: translate(-200px) rotate(90deg);
+    }
+    .square2{
+        transform: translate(200px) rotate(-90deg);
+    }
+    .square3{
+        transform: translate(200px) rotate(90deg);
+    }
+    .square4{
+        transform: translate(-200px) rotate(-90deg);
+    }
+}

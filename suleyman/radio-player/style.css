@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    font-family: "iter", sans-serif;
+    display: flex;
+    justify-content: center;  
+    height: 100vh;
+    background-color: blue;
+    align-items: center;
+    
+}
+
+.m-player{
+    background-color: blue;
+    border-radius: 18px;
+    box-shadow: 18px 18px 23px rebeccapurple, -108px -18px 20px rebeccapurple;
+    overflow: hidden;
+    width: 320px;
+    text-align: center;
+    position: relative;
+}
+.power-icon{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    font-size: 20px;
+    color:aquamarine
+}
+.search-icon{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 20px;
+    color: aquamarine;
+}
+.track-info{
+    padding: 22px;
+}
+.meer-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 33%;
+    margin: 3px;
+}
+.track-name{
+    font-weight:900;
+    font-size: 20px;
+    margin: 30px;
+}
+.artist-name{
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    margin: 30px;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.control-button{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20%;
+    padding: 9px;
+    margin: 0 9px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.futur{
+    height: 10px;
+    background: linear-gradient(to right, red, black);
+    border-radius: 5px;
+    margin: 0 22px;
+    margin-bottom: 22px;
+}
